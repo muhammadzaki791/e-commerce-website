@@ -1,46 +1,42 @@
-import { Button } from "@/components/ui/button"
-import Image from "next/image"
+import Image from "next/image";
 
 export default function HeroThree() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32">
-      <div className="container px-4 md:px-6">
-        <div className="grid lg:grid-cols-2 lg:gap-12 items-center gap-[30px]">
-          <div className="flex justify-center">
-            <Image
-              alt="Hero image"
-              className="rounded-lg object-cover"
-              height="400"
-              width="500"
-              src="/hero-pic-2.png"
-              priority
-            />
-          </div>
-          <div className="flex flex-col gap-[30px]">
-            <div className="space-y-2 w-[573px] h-[326px]">
-              <h5 className="text-sm tracking-widest text-muted-foreground uppercase">
-                Summer 2020
-              </h5>
-              <h2 className="text-5xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Part of the Neural Universe
-              </h2>
-              <p className="text-muted-foreground text-xl md:text-xl">
-              We know how large objects will act, 
-              but things on a small scale.  
-              </p>
-            </div>
-            <div className="flex flex-col gap-[10px] w-[339px] h-[52px] min-[339px]:flex-row">
-              <Button className="bg-emerald-500 hover:bg-emerald-600">
-                BUY NOW
-              </Button>
-              <Button variant="outline">
-                READ MORE
-              </Button>
-            </div>
+    <div className="w-full mb-20 max-w-[1439px]">
+      <div className="w-full flex justify-evenly items-center flex-wrap">
+        {/* hero image */}
+        <Image
+          src={"/hero-pic-2.png"}
+          alt="banner"
+          height={774}
+          width={725}
+          className="w-[400px] h-[400px]  lg:w-[725px] lg:h-[774px] object-cover mt-10 lg:mt-0 "
+        />
+
+        <div className=" font-montserrat text-white flex flex-col justify-center items-start">
+          {/* details */}
+          <p className="mt-10 md:mt-0 text-xl lg:mb-10 text-[#bdbdbd] font-bold">
+            SUMMER 2020
+          </p>
+
+          <h1 className="text-black font-bold text-3xl lg:text-[58px] md:w-[509px] leading-[80px]  lg:mb-10">
+            Part of the Neural Universe
+          </h1>
+          <p className=" text-sm md:text-xl w-[350px] md:w-[376px] mb-7 text-[#737373] font-medium">
+            We know how large objects will act, but things on a small scale.
+          </p>
+
+          {/* buttons */}
+          <div className="mb-10 md:mb-0 w-[339px] flex justify-between items-center">
+            <button className="w-[156px] h-[62px] rounded-md bg-[#2DC071]">
+              BUY NOW
+            </button>
+            <button className="w-[156px] h-[62px] bg-white rounded-md border-[1px] border-[#2DC071] text-[#2DC071]">
+              READ MORE
+            </button>
           </div>
         </div>
       </div>
-    </section>
-  )
+    </div>
+  );
 }
-

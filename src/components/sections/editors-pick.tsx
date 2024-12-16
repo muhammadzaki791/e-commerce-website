@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export function EditorsPick() {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-gray-50 max-w-[1439px]">
       <div className="container max-w-[1050px] mx-auto px-4">
         <h2 className="text-center text-4xl font-bold mb-4 text-[#252B42]">
           EDITORS PICK
@@ -12,9 +12,9 @@ export function EditorsPick() {
           Problems trying to resolve the conflict between
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           <Link
-            href="/category/men"
+            href="/shop"
             className="relative group col-span-2 w-full md:w-auto row-span-2 h-[500px] md:h-auto"
           >
             <Image
@@ -33,8 +33,8 @@ export function EditorsPick() {
           </Link>
 
           <Link
-            href="/category/women"
-            className="relative group col-span-2 row-span-2 h-[500px] w-full md:w-auto"
+            href="/shop"
+            className="relative group col-span-1 row-span-2 h-[500px] w-full md:w-auto"
           >
             <Image
               src="/product-2.png"
@@ -51,7 +51,7 @@ export function EditorsPick() {
           </Link>
 
           <Link
-            href="/category/accessories"
+            href="/shop"
             className="relative group row-span-1 col-span-1 h-[242px]"
           >
             <Image
@@ -69,7 +69,7 @@ export function EditorsPick() {
           </Link>
 
           <Link
-            href="/category/kids"
+            href="/shop"
             className="relative group h-[242px] row-span-1 col-span-1"
           >
             <Image

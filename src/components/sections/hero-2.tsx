@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 
 const HeroSection = () => {
   return (
-    <section className="relative w-full overflow-hidden bg-[#2D8D64]">
+    <section className="relative w-full max-w-[1439px] overflow-hidden bg-[#2D8D64]">
       <div className="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center justify-between">
           <div className="flex flex-col gap-6 max-w-xl mb-10 lg:mb-0">

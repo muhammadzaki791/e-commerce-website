@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen h-[716px] w-full max-w-[1439px] overflow-hidden">
+    <section className="relative min-h-screen h-[716px] w-full max-w-[1600px] overflow-hidden">
       <Image
         src="/hero-pic.jpg"
         alt="New Collection Background"
@@ -35,4 +35,3 @@ export default function Hero() {
     </section>
   )
 }
-

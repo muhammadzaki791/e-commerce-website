@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 
 export function Footer() {
   return (
-    <footer className="bg-gray-50 pt-12 pb-6">
+    <footer className="bg-gray-50 pt-12 pb-6 ">
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
           {/* Company Info */}

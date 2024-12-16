@@ -33,11 +33,11 @@ export function ProductCard({ product }: ProductCardProps) {
             <div className="flex items-center gap-2">
               {product.price.discounted ? (
                 <>
-                  <span className="text-sm font-medium text-[#191919]">
-                    ${product.price.discounted.toFixed(2)}
-                  </span>
                   <span className="text-sm text-[#191919]/60 line-through">
                     ${product.price.original.toFixed(2)}
+                  </span>
+                  <span className="text-base font-bold text-[#23856D]">
+                    ${product.price.discounted.toFixed(2)}
                   </span>
                 </>
               ) : (
